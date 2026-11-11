@@ -148,9 +148,8 @@ Latihan ketiga membahas penggunaan perulangan dan array dalam PHP. Array digunak
 
 **Hasil praktikum:**
 
-
-
-
+<img width="638" height="502" alt="image" src="https://github.com/user-attachments/assets/c2ecb24c-dcd4-4d04-b50f-559d9972b1f9" />
+<img width="636" height="379" alt="image" src="https://github.com/user-attachments/assets/ee5b3bbb-fc3c-411e-b040-23a8ce032318" />
 
 ## 4. Latihan 4 — Membuat Function
 
@@ -167,7 +166,8 @@ Pada latihan keempat, dipelajari cara membuat dan menggunakan function pada PHP.
 
 **Hasil praktikum:**
 
-![Latihan 4 - Membuat Function](screenshots/04-membuat-function.png)
+<img width="680" height="753" alt="image" src="https://github.com/user-attachments/assets/1f900de4-631b-47c6-a7a6-eaa3dcf2e9d3" />
+<img width="676" height="472" alt="image" src="https://github.com/user-attachments/assets/a29f9e8b-02c3-435d-b6b9-4034ccc141c9" />
 
 ## 5. Latihan 5 — Memproses Form dengan GET
 
@@ -185,7 +185,8 @@ Latihan kelima membahas cara menerima dan memproses data dari form menggunakan m
 
 **Hasil praktikum:**
 
-![Latihan 5 - Form GET](screenshots/05-form-get.png)
+<img width="719" height="581" alt="image" src="https://github.com/user-attachments/assets/9fde1a9b-28c6-44e8-a392-0cc8d09d157d" />
+<img width="618" height="165" alt="image" src="https://github.com/user-attachments/assets/c9a55145-b405-44da-a098-3df9e22c4783" />
 
 ## 6. Latihan 6 — Memproses Form dengan POST
 
@@ -204,7 +205,8 @@ Latihan keenam mempelajari pemrosesan data form menggunakan metode POST. Berbeda
 
 **Hasil praktikum:**
 
-![Latihan 6 - Form POST](screenshots/06-form-post.png)
+<img width="427" height="626" alt="image" src="https://github.com/user-attachments/assets/805489c1-e2f4-4980-9f01-2d5b7e468966" />
+<img width="425" height="145" alt="image" src="https://github.com/user-attachments/assets/66cd7d3e-96c0-4733-9d12-4240fb067962" />
 
 ## 7. Latihan 7 — Pengolahan Data Sederhana
 
@@ -223,106 +225,97 @@ Pada latihan ketujuh, dilakukan pengolahan data sederhana menggunakan PHP. Pengg
 
 **Hasil praktikum:**
 
-![Latihan 7 - Pengolahan Data Sederhana](screenshots/07-pengolahan-data.png)
+<img width="413" height="1075" alt="image" src="https://github.com/user-attachments/assets/a183dff7-abc9-45d3-9857-ba8a43dd4e46" />
+<img width="434" height="191" alt="image" src="https://github.com/user-attachments/assets/cd79436e-cb4a-4a00-9114-73d2fa16d431" />
 
 ---
 
 # F. Mini Project — Aplikasi Formulir Data Mahasiswa
 
-Mini project ini merupakan penerapan materi PHP yang telah dipelajari sebelumnya. Program dibuat untuk menerima data mahasiswa melalui formulir, kemudian memproses dan menampilkan data yang telah dimasukkan.
+Mini project ini membuat aplikasi formulir data mahasiswa menggunakan PHP dan HTML. Formulir digunakan untuk memasukkan data mahasiswa, kemudian data diperiksa terlebih dahulu di server sebelum ditampilkan pada halaman web.
 
-Formulir terdiri dari beberapa kolom, yaitu:
+## 1. Membuat Formulir Data Mahasiswa
 
-1. Nama.
-2. NIM.
-3. Program Studi.
-4. Semester.
-5. Email.
+Langkah kerja:
 
-## Langkah Kerja
+1. Membuat bagian formulir menggunakan HTML.
+2. Menggunakan metode POST untuk mengirim data.
+3. Membuat input Nama.
+4. Membuat input NIM.
+5. Membuat input Program Studi.
+6. Membuat input Semester dengan tipe number, nilai minimum 1 dan maksimum 14.
+7. Membuat input Email.
+8. Menambahkan atribut required pada setiap input.
+9. Membuat tombol Simpan Data untuk mengirim formulir.
 
-1. Membuat file `mini_project.php`.
-2. Membuat struktur HTML untuk formulir data mahasiswa.
-3. Menambahkan kolom input Nama, NIM, Program Studi, Semester, dan Email.
-4. Membuat tombol untuk mengirim data.
-5. Menggunakan PHP untuk menerima data dari formulir.
-6. Melakukan pemeriksaan terhadap data yang dimasukkan.
-7. Menggunakan `htmlspecialchars()` ketika menampilkan kembali data pengguna agar karakter khusus HTML tidak diproses sebagai kode HTML.
-8. Menampilkan hasil data mahasiswa apabila data telah memenuhi ketentuan.
-9. Menguji formulir menggunakan data yang benar dan data yang tidak sesuai.
+**Screenshot kode PHP:**
 
-## Hasil Mini Project
+<img width="462" height="647" alt="image" src="https://github.com/user-attachments/assets/80fadd37-e69e-4043-a3ba-d3aba2cd8b29" />
+<img width="458" height="650" alt="image" src="https://github.com/user-attachments/assets/a137318d-f8ea-4e26-8664-38a907407b64" />
+<img width="489" height="660" alt="image" src="https://github.com/user-attachments/assets/c581e048-96ca-4098-93b9-31281129f220" />
 
-**1. Tampilan formulir data mahasiswa**
+## 2. Memproses dan Menampilkan Data Mahasiswa
 
-![Mini Project - Formulir Data Mahasiswa](screenshots/08-form-mahasiswa.png)
+Langkah kerja:
 
-**2. Pengujian data valid**
+1. Mengambil data formulir menggunakan variabel `$_POST`.
+2. Memeriksa data mahasiswa menggunakan PHP.
+3. Jika terdapat kesalahan, program menampilkan pesan Data belum bisa disimpan beserta daftar kesalahannya.
+4. Jika data berhasil diproses, program menampilkan bagian Data Mahasiswa.
+5. Menggunakan `htmlspecialchars()` untuk mengamankan data ketika ditampilkan kembali ke halaman.
 
-Formulir diisi menggunakan data mahasiswa yang sesuai dengan ketentuan. Setelah tombol simpan data ditekan, program memproses dan menampilkan data yang dimasukkan.
+**Screenshot hasil program:**
+<img width="940" height="530" alt="image" src="https://github.com/user-attachments/assets/81282087-c2eb-4b30-8fe0-6cd2b5b06bd5" />
 
-![Mini Project - Data Valid](screenshots/09-form-mahasiswa-valid.png)
+# H. Pertanyaan Evaluasi
 
-**3. Pengujian data tidak valid**
+## 1. Apa perbedaan pemrosesan client-side dan server-side?
 
-Formulir diuji dengan memasukkan data yang tidak sesuai atau membiarkan kolom wajib kosong. Program diharapkan menampilkan pesan kesalahan dan tidak memproses data yang belum memenuhi ketentuan.
+Client-side adalah proses yang dijalankan di browser pengguna, contohnya HTML, CSS, dan JavaScript. Sedangkan server-side adalah proses yang dijalankan di server, seperti PHP. PHP memproses data di server kemudian hasilnya dikirim kembali ke browser.
 
-![Mini Project - Data Tidak Valid](screenshots/10-form-mahasiswa-tidak-valid.png)
+## 2. Mengapa file PHP harus dijalankan melalui web server?
+
+Karena PHP merupakan bahasa pemrograman server-side, sehingga kodenya harus diproses oleh server terlebih dahulu. Jika file PHP hanya dibuka langsung dari folder komputer, kode PHP tidak akan diproses seperti ketika dijalankan melalui XAMPP atau Laragon.
+
+## 3. Apa fungsi tanda $ pada variabel PHP?
+
+Tanda `$` digunakan untuk menandai sebuah variabel dalam PHP. Contohnya `$nama`, `$umur`, dan `$nilai`. Dengan tanda tersebut, PHP dapat mengetahui bahwa data tersebut merupakan sebuah variabel.
+
+## 4. Apa perbedaan metode GET dan POST?
+
+GET mengirim data melalui parameter URL sehingga data yang dikirim bisa terlihat pada alamat browser. Sedangkan POST mengirim data melalui body permintaan sehingga datanya tidak ditampilkan pada URL. POST biasanya digunakan untuk mengirim data dari form.
+
+## 5. Mengapa input pengguna perlu divalidasi di sisi server?
+
+Karena data yang dikirim pengguna belum tentu sesuai dengan yang dibutuhkan program. Validasi di server digunakan untuk memastikan data yang diterima benar dan sesuai aturan. Jadi, walaupun validasi sudah dilakukan pada form, server tetap harus melakukan pengecekan.
+
+## 6. Apa fungsi htmlspecialchars() ketika menampilkan data dari form?
+
+`htmlspecialchars()` digunakan untuk mengubah karakter khusus HTML menjadi bentuk yang aman ketika data pengguna ditampilkan kembali ke halaman. Hal ini membantu mengurangi risiko input pengguna dianggap sebagai kode HTML atau script.
+
+## 7. Apa manfaat penggunaan function dalam program PHP?
+
+Function membuat kode lebih teratur dan bisa digunakan kembali. Jadi, jika ada proses yang sama, kita tidak perlu menulis kode tersebut berulang kali. Contohnya function untuk menghitung diskon atau luas persegi panjang.
 
 ---
 
-# G. Pengujian Input Valid dan Tidak Valid
+# I. Kesimpulan
 
-Pengujian dilakukan untuk memastikan program dapat menerima data yang benar dan menolak data yang tidak sesuai dengan ketentuan.
+Berdasarkan praktikum yang telah dilakukan, PHP merupakan bahasa pemrograman server-side yang dapat digunakan untuk memproses data dan membuat halaman web menjadi lebih dinamis.
 
-## 1. Kasus Input Valid
+Materi yang dipelajari meliputi penggunaan variabel, operator, percabangan, perulangan, array, function, serta pemrosesan form menggunakan metode GET dan POST. Selain itu, dilakukan pengolahan data sederhana dan pembuatan mini project berupa Aplikasi Formulir Data Mahasiswa.
 
-**Kasus 1 — Seluruh data mahasiswa diisi dengan benar**
+Melalui praktikum ini, dapat dipahami bahwa data dari pengguna perlu diperiksa terlebih dahulu sebelum diproses atau ditampilkan kembali. Dengan demikian, PHP dapat digunakan untuk membangun aplikasi web yang lebih terstruktur dan mampu menangani input pengguna.
 
-- Nama: Bagus Rigen Hermanta
-- NIM: 312510145
-- Program Studi: Teknik Informatika
-- Semester: 5
-- Email: bagus@example.com
+---
 
-Hasil yang diharapkan: Data diterima dan ditampilkan oleh program.
+# J. Pengumpulan Tugas
 
-**Kasus 2 — Mengisi data mahasiswa dengan email yang sesuai**
+1. Seluruh file latihan PHP disimpan dalam folder `Lab7Web_PHP`.
+2. Mini project Aplikasi Formulir Data Mahasiswa disertakan dalam repository.
+3. File `README.md` berisi tujuan, perangkat, cara menjalankan server lokal, struktur file, langkah kerja, hasil praktikum, dan pertanyaan evaluasi.
+4. Screenshot hasil setiap latihan dan pengujian form dimasukkan ke folder `screenshots`.
+5. Seluruh perubahan disimpan dan di-commit ke repository GitHub.
+6. URL repository dikumpulkan melalui e-learning/ecampus sesuai arahan dosen.
 
-- Nama: Andi
-- NIM: 312510146
-- Program Studi: Teknik Informatika
-- Semester: 3
-- Email: andi@example.com
-
-Hasil yang diharapkan: Data dapat diproses apabila seluruh kolom memenuhi aturan validasi.
-
-## 2. Kasus Input Tidak Valid
-
-**Kasus 1 — Formulir dikirim dalam keadaan kosong**
-
-Seluruh kolom tidak diisi, kemudian tombol simpan data ditekan.
-
-Hasil yang diharapkan: Program menampilkan pesan bahwa data wajib diisi dan tidak memproses formulir.
-
-**Kasus 2 — Memasukkan format email yang salah**
-
-- Nama: Bagus
-- NIM: 312510145
-- Program Studi: Teknik Informatika
-- Semester: 5
-- Email: bagus123
-
-Hasil yang diharapkan: Program menolak data karena format email tidak sesuai.
-
-## 3. Dokumentasi Pengujian
-
-**Pengujian valid kedua:**
-
-![Pengujian Input Valid](screenshots/11-pengujian-valid-2.png)
-
-**Pengujian tidak valid kedua:**
-
-![Pengujian Input Tidak Valid](screenshots/12-pengujian-tidak-valid-2.png)
-
-*Catatan: Data di atas merupakan contoh skenario pengujian. Hasil yang diharapkan harus dibuktikan dengan menjalankan program. Jika aturan validasi pada kode berbeda,
+**Repository:** Lab7Web_PHP

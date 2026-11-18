@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 28px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.main {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td img {
+    width: 80px;
+}
+
+a {
+    color: blue;
+}
+
+.input {
+    margin-bottom: 12px;
+}
+
+.input label {
+    display: inline-block;
+    width: 100px;
+}
+
+.input input,
+.input select {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid #ddd;
+}
+
+.submit input {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    cursor: pointer;
+}
+
+.submit input:hover {
+    background-color: #0000cc;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.main {
+    margin-top: 20px;
+}
+
+.main > a {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 7px 10px;
+    background: #337ab7;
+    color: white;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background: #f5f5f5;
+}
+
+td img {
+    width: 80px;
+}
+
+td a {
+    color: #337ab7;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Form Tambah dan Ubah */
+.input {
+    margin-bottom: 12px;
+}
+
+.input label {
+    display: inline-block;
+    width: 100px;
+}
+
+.input input,
+.input select {
+    padding: 6px;
+    width: 200px;
+    border: 1px solid #ccc;
+}
+
+.submit input {
+    background: #337ab7;
+    color: white;
+    border: 0;
+    padding: 7px 15px;
+    cursor: pointer;
+}
